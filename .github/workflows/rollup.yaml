@@ -35,6 +35,7 @@ jobs:
 
   deploy:
     needs: [build]
+    runs-on: ubuntu-latest    
     steps:
       # 👇 Get the dist folder
       - name: Download build artifacts
